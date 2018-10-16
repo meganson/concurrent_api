@@ -1,0 +1,62 @@
+{
+  "appName": "permission",
+  "port": 8082,
+  "log": {
+    "dir": "/data/log/"
+  },
+  "permissionTtlHours": 24,
+  "redis": [
+    {
+      "namespace": "m_concurrent_0",
+      "hostname": "localhost",
+      "username": "root",
+      "database": "0",
+      "port": "6379",
+      "password": "",
+      "auth": ""
+    },
+    {
+      "namespace": "m_concurrent_1",
+      "hostname": "localhost",
+      "username": "root",
+      "database": "1",
+      "port": "6379",
+      "password": "",
+      "auth": ""
+    },
+    {
+      "namespace": "m_concurrent_2",
+      "hostname": "localhost",
+      "username": "root",
+      "database": "2",
+      "port": "6379",
+      "password": "",
+      "auth": ""
+    },
+    {
+      "namespace": "m_concurrent_3",
+      "hostname": "localhost",
+      "username": "root",
+      "database": "3",
+      "port": "6379",
+      "password": "",
+      "auth": ""
+    }
+  ],
+  "db": {
+    "namespace": "m_ingest",
+    "hostname": "localhost",
+    "username": "root",
+    "database": "m_ingest",
+    "password": "`123",
+    "port": "3306",
+    "procedure": true,
+    "encrypt": true,
+    "connLimit": 10,
+    "pool": {
+      "max": 10,
+      "min": 0,
+      "idleTimeoutMillis": 30000
+    }
+  }
+}

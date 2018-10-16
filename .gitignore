@@ -1,0 +1,10 @@
+
+*.idea
+
+conf/dev.json
+conf/prd.json
+conf/prd_aws.json
+conf/prd_local.json
+conf/stg.json
+
+node_modules/
